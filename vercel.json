@@ -2,12 +2,6 @@
     "buildCommand": "cd client && npm run build && cd ..",
     "installCommand": "cd client && npm install && cd .. && npm install",
     "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@now/node-server"
-    }
-  ],
 "routes": [{
       "handle": "filesystem"
     },
@@ -15,5 +9,10 @@
       "src": "/.*",
       "dest": "server.js"
     }
-  ]
+  ],
+ "functions": {
+    server.js": {
+        "runtime": "@now/node-server"
+    }
+  }
 }
