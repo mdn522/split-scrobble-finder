@@ -1,4 +1,4 @@
 {
-    "buildCommand": "cd client && npm run build && cd .. && npm run build",
+    "buildCommand": "cd client && npm run build && cd .. && npm build",
     "installCommand": "cd client && npm install && cd .. && npm install"
 }
